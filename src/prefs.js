@@ -5,7 +5,7 @@ const GtkBuilder = Gtk.Builder;
 const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 
-const Gettext = imports.gettext.domain('gnome-shell-extension-panel-osd');
+const Gettext = imports.gettext.domain('atom-notify');
 const _ = Gettext.gettext;
 
 const ExtensionUtils = imports.misc.extensionUtils;
@@ -42,7 +42,7 @@ const PanelOsdPrefsWidget = new GObject.Class({
         if (this.test_notification)
             this.test_notification = false;
 
-        this.Window.set_translation_domain('gnome-shell-extension-panel-osd');
+        this.Window.set_translation_domain('atom-notify');
         this.Window.add_from_file(EXTENSIONDIR + "/panel-osd-settings.ui");
 
         this.MainWidget = this.Window.get_object("main-widget");
@@ -222,7 +222,7 @@ const PanelOsdPrefsWidget = new GObject.Class({
 });
 
 function init() {
-    Convenience.initTranslations('gnome-shell-extension-panel-osd');
+    Convenience.initTranslations('atom-notify');
 }
 
 function buildPrefsWidget() {

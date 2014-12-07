@@ -1,35 +1,32 @@
 #!/usr/bin/env seed
 
 /*
+ * PO Updater for Atom Notify. This file is part of Atom Notify, a fork
+ * of gnome-shell-extension-panel-osd for OzonOS.
  *
- *  PO Updater for GNOME Shell Extension Panel OSD
- *
- * Copyright (C) 2012
+ *     Copyright (C) 2012
  *     Christian METZLER <neroth@xeked.com>
  *     2014 Jens Lody <jens@jenslody.de>
  *
- *
- * This file is part of gnome-shell-extension-panel-osd.
- *
- * gnome-shell-extension-panel-osd is free software: you can redistribute it and/or modify
+ * Atom Notify is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * gnome-shell-extension-panel-osd is distributed in the hope that it will be useful,
+ * Atom Notify is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with gnome-shell-extension-panel-osd.  If not, see <http://www.gnu.org/licenses/>.
+ * along with Atom Notify. If not, see <http://www.gnu.org/licenses/>.
  *
  */
 
 Gio = imports.gi.Gio;
 
-print("Generate gnome-shell-extension-panel-osd.pot");
-var xgettext = Seed.spawn("xgettext -o gnome-shell-extension-panel-osd.pot --from-code=utf-8 --keyword=_ --keyword=translatable -f POTFILES.in");
+print("Generate atom-notify.pot");
+var xgettext = Seed.spawn("xgettext -o atom-notify.pot --from-code=utf-8 --keyword=_ --keyword=translatable -f POTFILES.in");
 
 if (xgettext.stderr)
     print(xgettext.stderr);
@@ -43,7 +40,7 @@ else {
         if (child.get_name().search(/.po$/) != -1) {
             print("Generate " + child.get_name());
             linguas += n + (child.get_name().split(".po")[0]);
-            Seed.spawn("msgmerge -U " + child.get_name() + " gnome-shell-extension-panel-osd.pot");
+            Seed.spawn("msgmerge -U " + child.get_name() + " atom-notify.pot");
             n = "\n";
             i++;
         }

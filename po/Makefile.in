@@ -17,8 +17,8 @@
 # We have the following line for use by intltoolize:
 # INTLTOOL_MAKEFILE
 
-GETTEXT_PACKAGE = gnome-shell-extension-panel-osd
-PACKAGE = gnome-shell-extension-panel-osd
+GETTEXT_PACKAGE = atom-notify
+PACKAGE = atom-notify
 VERSION = 1.1
 
 SHELL = /bin/sh
@@ -36,7 +36,7 @@ libdir = ${exec_prefix}/lib
 DATADIRNAME = share
 itlocaledir = $(prefix)/$(DATADIRNAME)/locale
 subdir = po
-install_sh = ${SHELL} /home/jens/sources/p/gnome-shell-extension-panel-osd/config/install-sh
+install_sh = ${SHELL} /home/jens/sources/p/atom-notify/config/install-sh
 # Automake >= 1.8 provides $(MKDIR_P).
 # Until it can be supposed, use the safe fallback:
 mkdir_p = $(install_sh) -d

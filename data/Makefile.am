@@ -1,4 +1,4 @@
-extensionurl = https://github.com/jenslody/gnome-shell-extension-panel-osd
+extensionurl = https://github.com/ozonos/atom-notify
 
 # Change these to modify how installation is performed
 topextensiondir = $(datadir)/gnome-shell/extensions

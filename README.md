@@ -16,8 +16,8 @@ Make sure you have the following dependencies installed:
 Run the following commands:
 
 ```bash
-cd ~ && git clone git://github.com/ozonos/nsion-panel-osd.git
-cd ~/gnome-shell-extension-panel-osd
+cd ~ && git clone git://github.com/ozonos/atom-notify.git
+cd ~/atom-notify
 ./autogen.sh && make local-install
 ```
 

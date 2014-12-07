@@ -13,6 +13,7 @@
  *  The idea comes from 'Shell OSD' gnome-shell extension by
  *  mpnordland@gmail.com
  */
+
 const ExtensionUtils = imports.misc.extensionUtils;
 const Config = imports.misc.config;
 const Main = imports.ui.main;
@@ -23,7 +24,7 @@ const Me = ExtensionUtils.getCurrentExtension();
 const Convenience = Me.imports.convenience;
 const St = imports.gi.St;
 
-const Gettext = imports.gettext.domain('gnome-shell-extension-panel-osd');
+const Gettext = imports.gettext.domain('atom-notify');
 const _ = Gettext.gettext;
 
 const PANEL_OSD_SETTINGS_SCHEMA = 'org.gnome.shell.extensions.panel-osd';
@@ -70,7 +71,7 @@ const State = {
 };
 
 function init() {
-    Convenience.initTranslations('gnome-shell-extension-panel-osd');
+    Convenience.initTranslations('atom-notify');
 }
 
 let Settings;

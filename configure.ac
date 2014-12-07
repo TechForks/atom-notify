@@ -1,6 +1,6 @@
 AC_PREREQ(2.63)
 dnl be carefull, the version needs to be in sync with your gnome shell version
-AC_INIT([gnome-shell-extension-panel-osd],[1.1],[https://github.com/jenslody/gnome-shell-extension-panel-osd/issues])
+AC_INIT([atom-notify],[1.1],[https://github.com/gnome-shell-extension-panel-osd/issues])
 
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([config])
@@ -11,7 +11,7 @@ m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 AC_PROG_SED
 
-GETTEXT_PACKAGE=gnome-shell-extension-panel-osd
+GETTEXT_PACKAGE=atom-notify
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
                    [The prefix for our gettext translation domains.])

@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="gnome-shell-extension-panel-osd" />
+		<Option title="atom-notify" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="extension">
-				<Option output="bin/Debug/gnome-shell-extension-panel-osd" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/atom-notify" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -34,11 +34,11 @@
 		<Unit filename="data/org.gnome.shell.extensions.panel-osd.gschema.xml.in" />
 		<Unit filename="data/panel-osd-settings.ui" />
 		<Unit filename="data/stylesheet.css" />
-		<Unit filename="gnome-shell-extension-panel-osd.spec" />
+		<Unit filename="atom-notify.spec" />
 		<Unit filename="po/Makefile.in" />
 		<Unit filename="po/POTFILES.in" />
 		<Unit filename="po/de.po" />
-		<Unit filename="po/gnome-shell-extension-panel-osd.pot" />
+		<Unit filename="po/atom-notify.pot" />
 		<Unit filename="po/update.js" />
 		<Unit filename="src/Makefile.am" />
 		<Unit filename="src/convenience.js" />

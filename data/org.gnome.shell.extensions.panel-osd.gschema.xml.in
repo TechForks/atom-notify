@@ -1,4 +1,4 @@
-<schemalist gettext-domain="gnome-shell-extension-panel-osd">
+<schemalist gettext-domain="atom-notify">
   <schema id="org.gnome.shell.extensions.panel-osd" path="/org/gnome/shell/extensions/panel-osd/">
     <key name="x-pos" type="d">
       <default>50.0</default>

@@ -1,10 +1,10 @@
 #!/bin/sh
 
-GITHUB="jenslody-gnome-shell-extension-panel-osd"
-BASE_URL="https://github.com/jenslody/gnome-shell-extension-panel-osd/tarball/master/"
+GITHUB="ozonos-atom-notify"
+BASE_URL="https://github.com/ozonos/atom-notify"
 TARBALL_PATH="/home/jens/rpmbuild/SOURCES/"
 SPEC_PATH="/home/jens/rpmbuild/SPECS/"
-SPEC_FILE="gnome-shell-extension-panel-osd.spec"
+SPEC_FILE="atom-notify.spec"
 
 SCRIPT_DIR=`dirname "$0"`
 #echo "x${SCRIPT_DIR}x"
